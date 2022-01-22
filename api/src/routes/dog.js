@@ -11,7 +11,7 @@ routerD.get('/',  (req,res,next)=>{
     let dogPromiseAPI
     let dogPromiseDB
         if (name) {
-            dogPromiseAPI = axios.get('https://api.thedogapi.com/v1/breeds/search?q='+name)  // con axios no necesito otra promesa ni convertir a JSON
+            dogPromiseAPI = axios.get('https://api.thedogapi.com/v1/breeds/search?q='+ name)  // con axios no necesito otra promesa ni convertir a JSON
             dogPromiseDB = Dog.findAll({
                    include: Temperaments,
                    name : {

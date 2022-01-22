@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const routerH = require('./home')
-const routerD = require('./Dog')
+const routerD = require('./dog')
 const routerT = require('./temp')
 const eje = require('./ejemplo')
 // Importar todos los routers;
@@ -12,7 +12,7 @@ const router = Router();
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 
-router.use('/', routerH);
+router.use('/', routerD);
 router.use('/dogs', routerD);
 router.use('/temperament', routerT);
 router.use('/ejemplos', eje);

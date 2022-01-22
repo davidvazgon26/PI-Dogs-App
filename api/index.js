@@ -26,7 +26,7 @@ const { conn } = require('./src/db.js'); //BD con sequelize
 // console.log(server) 
     
 conn.sync({ force: true }).then(() => {
-   server.listen(3000, () => {
-    console.log('Escuchando en el puerto: 3000'); // eslint-disable-line no-console
+   server.listen(3001, () => {
+    console.log('Escuchando en el puerto: 3001'); // eslint-disable-line no-console
   });
 });
