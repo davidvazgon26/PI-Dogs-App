@@ -1,0 +1,12 @@
+.dogCard{
+    width: 400px;
+    height: 300px;
+    border: 1px slategray solid;
+    border-radius: 15px;
+    background: linear-gradient(to bottom right, rgb(13, 14, 14), rgb(204, 185, 17));
+    margin-bottom: 20px;
+    /* background-image: url('https://assets.website-files.com/5d5ae195b1398c4a684427ce/5e432e89b59b7cbee18b2740_BlogTulum.jpg'); */
+    color: #646363;
+    box-shadow:8px 8px 8px #373c3c
+    
+}

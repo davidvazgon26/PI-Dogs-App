@@ -7,16 +7,18 @@ export function fetchDogs(){
     return function(dispatch){
         axios.get('http://localhost:3001/dogs')
         .then((dogs)=>{
+
             dispatch({   //en lugar de retornar el objeto hago el dispatch con la librerira de readux thunk
                 type: FETCH_DOGS,
                 payload: dogs.data
-            })
+            }) 
         })
         .catch ((error)=>{
             console.error(error)
         })
     }
 }
+
 
 export function searchDogs(search){
     return function(dispatch){
